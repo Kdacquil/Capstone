@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <h2>Home</h2>
+            <ul>
+                <li class="active">Onboarding</li>
+                <li>Offboarding</li>
+                <li>Employee Information</li>
+                <li>Dashboard</li>
+            </ul>
+        </div>
+
+        <!-- Main Onboarding Content -->
+        <div class="content">
+            <h1>Onboarding</h1>
+
+            <!-- Add New Employee Button inside form -->
+            <form class="onboarding-form" id="onboarding-form" action="#" method="POST">
+                <div class="employee-header">
+                    <button class="add-btn" id="submit" type="submit">Submit</button>
+                </div>
+
+                <!-- New Request -->
+                <div class="form-section">
+                    <label for="Request">Request</label>
+                    <select id="Request" required>
+                        <option value="">Select</option>
+                        <option value="on-site">Pre-boarding</option>
+                        <option value="remote">Orientation</option>
+                        <option value="hybrid">Hired</option>
+                    </select>
+                </div>
+
+                <!-- Onboarding Form -->
+                <div class="form-section">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" id="contact" placeholder="Enter Contact Number" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-section">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="finish-date">Finish Date</label>
+                        <input type="date" id="finish-date">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-section">
+                        <label for="time-spent">Time Spent</label>
+                        <input type="text" id="time-spent" placeholder="Enter Time Spent" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="employment-type">Employment Type</label>
+                        <select id="employment-type" required>
+                            <option value="">Select</option>
+                            <option value="full-time">Full-Time</option>
+                            <option value="part-time">Part-Time</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-section">
+                        <label for="department">Department</label>
+                        <select id="department" required>
+                            <option value="">Select</option>
+                            <option value="school-of-computing">School of Computing</option>
+                            <option value="school-of-education">School of Education</option>
+                            <option value="school-of-art-and-science">School of Art and Science</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="hiring-date">Hiring Date</label>
+                        <input type="date" id="hiring-date" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-section">
+                        <label for="location">Location</label>
+                        <select id="location" required>
+                            <option value="">Select</option>
+                            <option value="on-site">On-Site</option>
+                            <option value="remote">Remote</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="notification">Automated Notification</label>
+                        <select id="notification" required>
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- File Upload Section -->
+                <div class="form-section">
+                    <label for="employee-file">Attach File</label>
+                    <input type="file" id="employee-file" accept=".pdf, .docx, .doc" />
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script type="module" defer src="./app.js"></script>
+</body>
+</html>
